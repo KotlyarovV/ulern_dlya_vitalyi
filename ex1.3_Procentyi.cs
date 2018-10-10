@@ -4,6 +4,12 @@ namespace ex1_3
 {
     class Program
     {
+        /*
+            1.названия переменных - пиздец, их надо называть так, чтобы из названия было понятно, о чем идет речь. 
+            2. Convert.ToDouble(jest[0]); - нечто очень странное , юзай double.Parse() (или Double.Parse) 
+            3. здесь точно можно обойтись без цикла - юзай возведение в степень
+            4. String[] - дважды плохо - во первых юзай string[] вместо String[] , во вторых везде, где можно пиши var
+        */
         public static double Calculate(string userInput)
         {
             String[] jest = userInput.Split(' ');
